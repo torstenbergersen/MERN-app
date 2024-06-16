@@ -30,9 +30,6 @@ This project consists of a backend API and a frontend application. Follow the st
 
 
 ## Additional Information
-Backend: Express server with MongoDB connection.
-Frontend: React application with EmailJS integration.
+- Backend: Express server with MongoDB connection.
+- Frontend: React application with EmailJS integration.
 
-
-
-This project is licensed under the MIT License. See the LICENSE file for details.
