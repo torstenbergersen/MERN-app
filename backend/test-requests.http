@@ -1,0 +1,92 @@
+### CREATE five documents.
+POST http://localhost:3000/travels HTTP/1.1
+content-type: application/json
+
+{
+    "location": "Rome",
+    "date": "05-24-18",
+    "duration": 3,
+    "language": "Italian"
+}
+
+
+### CREATE 2
+POST http://localhost:3000/travels HTTP/1.1
+content-type: application/json
+
+{
+    "location": "Greece",
+    "date": "06-03-13",
+    "duration": 5,
+    "language": "Greek"
+}
+
+
+### CREATE 3
+POST http://localhost:3000/travels HTTP/1.1
+content-type: application/json
+
+{
+    "location": "Rome",
+    "date": "05-24-18",
+    "duration": 3,
+    "language": "Italian"
+}
+
+
+### CREATE 4
+POST http://localhost:3000/travels HTTP/1.1
+content-type: application/json
+
+{
+    "location": "Rome",
+    "date": "05-24-18",
+    "duration": 3,
+    "language": "Italian"
+}
+
+
+### CREATE 5
+POST http://localhost:3000/travels HTTP/1.1
+content-type: application/json
+
+{
+    "location": "Rome",
+    "date": "05-24-18",
+    "duration": 3,
+    "language": "Italian"
+}
+
+
+
+### RETRIEVE all documents.
+GET http://localhost:3000/travels HTTP/1.1
+
+
+
+### RETRIEVE a document by its ID.
+### Replace the following ID with one that exists in the collection.
+GET http://localhost:3000/travels/664e05d04778c7baf03547c0 HTTP/1.1
+
+
+### UPDATE one document's year, by ID.
+### Replace the ID in the following request with one that exists
+### and update the year:
+PUT http://localhost:3000/travels/64d3afbb0816f78a7cedf90a HTTP/1.1
+content-type: application/json
+
+{
+    "location": "Rome",
+    "date": "05-24-18",
+    "duration": 3,
+    "language": "Italian"
+}
+
+### DELETE by ID (responds with nothing if successful):
+DELETE http://localhost:3000/travels/664e05d04778c7baf03547c0 HTTP/1.1
+
+
+
+### RETRIEVE all documents (responds with 4 or the original 5):
+GET http://localhost:3000/travels HTTP/1.1
+
